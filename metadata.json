@@ -1,0 +1,6 @@
+{
+  "name": "Primo Energy",
+  "description": "Corporate website for Primo, a leading oil, gas, and sustainable energy solutions enterprise.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
