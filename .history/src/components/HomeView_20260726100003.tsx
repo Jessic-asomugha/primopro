@@ -447,17 +447,17 @@ export default function HomeView({
             
             {/* Core copy and metric bars */}
             <div className="space-y-6">
-              <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Our Performance</span>
+              <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Engineering Excellence</span>
               <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-brand-dark">
-                Delivering Excellence
+                Shaping the Energy Future
               </h2>
               
               <div className="space-y-4 text-xs text-brand-muted leading-relaxed">
                 <p>
-                  <strong>Reliable Fuel Supply:</strong> We ensure consistent delivery of high-quality petroleum products to keep your operations running smoothly without interruption.
+                  <strong>Advanced Drilling & Refining Analytics:</strong> We engineer predictive core drilling telemetry and carbon sequestration modules that dramatically reduce fugitive emissions across extraction field terminals.
                 </p>
                 <p>
-                  <strong>Competitive Pricing:</strong> Our market-competitive wholesale pricing and bulk supply capability help businesses optimize their energy costs.
+                  <strong>A Proven Record of Capital Execution:</strong> With strict HSE blueprints and high-spec logistics integration, we assure mega project delivery within schedule and zero regulatory friction.
                 </p>
               </div>
 
@@ -465,7 +465,17 @@ export default function HomeView({
               <div className="space-y-4 pt-2">
                 <div>
                   <div className="flex justify-between text-xs font-bold text-brand-dark mb-1">
-                    <span>On-Time Delivery</span>
+                    <span>Deepwater Technology Integration</span>
+                    <span>97%</span>
+                  </div>
+                  <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
+                    <div className="bg-brand-accent h-full rounded-full" style={{ width: '97%' }} />
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex justify-between text-xs font-bold text-brand-dark mb-1">
+                    <span>Petrochemical Distillation Purity</span>
                     <span>98%</span>
                   </div>
                   <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
@@ -475,17 +485,7 @@ export default function HomeView({
 
                 <div>
                   <div className="flex justify-between text-xs font-bold text-brand-dark mb-1">
-                    <span>Customer Satisfaction</span>
-                    <span>99%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
-                    <div className="bg-brand-accent h-full rounded-full" style={{ width: '99%' }} />
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between text-xs font-bold text-brand-dark mb-1">
-                    <span>Product Quality</span>
+                    <span>HSE Safety & Environmental Compliance</span>
                     <span>100%</span>
                   </div>
                   <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
@@ -495,11 +495,11 @@ export default function HomeView({
 
                 <div>
                   <div className="flex justify-between text-xs font-bold text-brand-dark mb-1">
-                    <span>24/7 Support Availability</span>
-                    <span>100%</span>
+                    <span>On-Time Maritime & Pipeline Dispatch</span>
+                    <span>95%</span>
                   </div>
                   <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
-                    <div className="bg-brand-accent h-full rounded-full" style={{ width: '100%' }} />
+                    <div className="bg-brand-accent h-full rounded-full" style={{ width: '95%' }} />
                   </div>
                 </div>
               </div>
@@ -509,7 +509,7 @@ export default function HomeView({
                   onClick={onRequestQuote}
                   className="bg-brand-accent hover:bg-brand-accent-hover text-white px-6 py-3.5 text-xs font-bold tracking-wider uppercase rounded-lg transition shadow-xs hover:shadow-md"
                 >
-                  Request a Quote
+                  Request a Commercial Quote
                 </button>
               </div>
             </div>
@@ -528,8 +528,8 @@ export default function HomeView({
               
               {/* Floating technical label */}
               <div className="absolute top-4 left-4 bg-brand-dark/95 text-white py-3 px-4 rounded-lg backdrop-blur-xs text-[10px] font-mono tracking-wider border border-white/10 shadow-lg">
-                <span>SERVICE STATUS: ACTIVE</span>
-                <span className="block text-brand-accent font-bold mt-0.5">24/7 SUPPORT // SAME-DAY DELIVERY</span>
+                <span>REFINERY STATUS: OPERATIONAL</span>
+                <span className="block text-brand-accent font-bold mt-0.5">THROUGHPUT: 250,000 BPD // SECURE</span>
               </div>
             </div>
 

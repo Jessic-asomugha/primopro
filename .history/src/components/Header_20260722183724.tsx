@@ -41,7 +41,7 @@ export default function Header({ activePage, setActivePage, onRequestQuote }: He
                 primo<span className="text-brand-accent">.</span>
               </span>
               <span className="block text-[8px] font-semibold tracking-widest text-brand-muted uppercase -mt-1">
-                Reliable Energy Solutions. Delivered with Excellence.
+                Oil & Energy Solutions
               </span>
             </div>
           </div>
@@ -69,11 +69,11 @@ export default function Header({ activePage, setActivePage, onRequestQuote }: He
           {/* Action CTA */}
           <div className="hidden md:flex items-center gap-4">
             <a 
-              href="tel:+234XXXXXXXXXX" 
+              href="tel:+12094728764" 
               className="flex items-center gap-2 text-sm text-brand-dark/70 hover:text-brand-accent transition-colors"
             >
               <Phone className="h-4 w-4 text-brand-accent" />
-              <span className="font-mono font-medium">+234 XXX XXX XXXX</span>
+              <span className="font-mono font-medium">+1 (209) 472-8764</span>
             </a>
             <button
               onClick={onRequestQuote}
@@ -117,8 +117,8 @@ export default function Header({ activePage, setActivePage, onRequestQuote }: He
             <div className="border-t border-gray-100 pt-4 mt-2 space-y-4">
               <div className="flex items-center justify-between px-4 text-sm text-brand-muted">
                 <span>Direct Inquiries:</span>
-                <a href="tel:+234XXXXXXXXXX" className="font-mono font-semibold text-brand-dark flex items-center gap-1.5 hover:text-brand-accent">
-                  <Phone className="h-3.5 w-3.5" /> +234 XXX XXX XXXX
+                <a href="tel:+12094728764" className="font-mono font-semibold text-brand-dark flex items-center gap-1.5 hover:text-brand-accent">
+                  <Phone className="h-3.5 w-3.5" /> +1 (209) 472-8764
                 </a>
               </div>
               <button

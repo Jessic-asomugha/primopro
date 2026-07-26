@@ -53,7 +53,7 @@ export default function ContactView({ onBackToHome }: ContactViewProps) {
           <div className="max-w-3xl space-y-4">
             <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight text-brand-dark">Contact</h1>
             <p className="text-sm text-brand-muted leading-relaxed">
-              Our team is ready to address your fuel supply needs, energy consulting requests, and logistics requirements. Reach out to our Abuja headquarters below.
+              Our regional energy task force is ready to address global fuel contracts, ESG audits, and physical pipeline terminal installations. Reach out to our California headquarters below.
             </p>
           </div>
         </div>
@@ -93,9 +93,9 @@ export default function ContactView({ onBackToHome }: ContactViewProps) {
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="text-[10px] font-bold text-gray-400 uppercase tracking-wider font-mono">Head Office</h4>
+                    <h4 className="text-[10px] font-bold text-gray-400 uppercase tracking-wider font-mono">Corporate Headquarters</h4>
                     <p className="text-sm text-brand-dark font-medium mt-1">
-                      Abuja, Federal Capital Territory, Nigeria
+                      4096 Modesto, CA 95350, USA
                     </p>
                   </div>
                 </div>
@@ -105,10 +105,10 @@ export default function ContactView({ onBackToHome }: ContactViewProps) {
                     <Phone className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="text-[10px] font-bold text-gray-400 uppercase tracking-wider font-mono">24-Hour Customer Support</h4>
+                    <h4 className="text-[10px] font-bold text-gray-400 uppercase tracking-wider font-mono">24/7 Energy Hotline</h4>
                     <p className="text-sm text-brand-dark font-mono font-medium mt-1">
-                      <a href="tel:+234XXXXXXXXXX" className="hover:text-brand-accent transition">
-                        +234 XXX XXX XXXX
+                      <a href="tel:+12094728764" className="hover:text-brand-accent transition">
+                        +1 (209) 472-8764
                       </a>
                     </p>
                   </div>
@@ -119,10 +119,10 @@ export default function ContactView({ onBackToHome }: ContactViewProps) {
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="text-[10px] font-bold text-gray-400 uppercase tracking-wider font-mono">Email</h4>
+                    <h4 className="text-[10px] font-bold text-gray-400 uppercase tracking-wider font-mono">Central Administration</h4>
                     <p className="text-sm text-brand-dark font-medium mt-1">
-                      <a href="mailto:info@primoenergy.com.ng" className="hover:text-brand-accent transition">
-                        info@primoenergy.com.ng
+                      <a href="mailto:info@primoenergy.com" className="hover:text-brand-accent transition">
+                        info@primoenergy.com
                       </a>
                     </p>
                   </div>
@@ -252,7 +252,7 @@ export default function ContactView({ onBackToHome }: ContactViewProps) {
                     <CheckCircle className="h-14 w-14 text-emerald-500 mx-auto" />
                     <h3 className="font-display text-xl font-bold tracking-tight">Transmission Complete</h3>
                     <p className="text-xs text-brand-muted leading-relaxed max-w-sm mx-auto">
-                      Thank you. Your inquiry has been received. Our team will respond shortly.
+                      Thank you. Your corporate question has been routed directly to the California administration registry. We will reply shortly.
                     </p>
                     <button
                       onClick={resetForm}
@@ -282,12 +282,12 @@ export default function ContactView({ onBackToHome }: ContactViewProps) {
         {/* Floating geographic node markers */}
         <div className="absolute inset-0 z-20 flex items-center justify-center p-4">
           <div className="bg-brand-dark/95 border border-white/10 rounded-xl p-5 shadow-2xl max-w-xs text-white">
-            <span className="block text-[10px] font-mono tracking-widest text-brand-accent uppercase">Head Office Location</span>
-            <h4 className="font-display text-sm font-bold mt-1">Abuja, FCT — Nigeria</h4>
+            <span className="block text-[10px] font-mono tracking-widest text-brand-accent uppercase">Operational Base Node</span>
+            <h4 className="font-display text-sm font-bold mt-1">California HQ — Modesto</h4>
             <p className="text-[11px] text-gray-400 mt-2">
-              Federal Capital Territory
+              GPS: 37.6391° N, 120.9969° W
             </p>
-            <span className="block text-[9px] text-brand-accent mt-1 font-mono">// Service Coverage: Active</span>
+            <span className="block text-[9px] text-brand-accent mt-1 font-mono">// Terminal Connection: Stable</span>
           </div>
         </div>
       </section>

@@ -23,18 +23,18 @@ export default function HomeView({
   const steps = [
     {
       number: '01',
-      title: 'Contact & Consultation',
-      desc: 'Reach out to discuss your energy requirements. Our team provides expert consultation on the best fuel solutions for your needs.'
+      title: 'Exploration & Deepwater Drilling',
+      desc: 'Deploying high-precision seismic models, offshore rigs, and core testing to access oil and gas reserves safely.'
     },
     {
       number: '02',
-      title: 'Quote & Agreement',
-      desc: 'Receive a competitive quote tailored to your volume and delivery requirements. We ensure transparent pricing and flexible terms.'
+      title: 'Refining & Chemical Synthesis',
+      desc: 'Optimizing crude distillation to synthesize high-purity petrochemical feedstocks and ultra-clean commercial fuels.'
     },
     {
       number: '03',
-      title: 'Delivery & Support',
-      desc: 'Enjoy reliable, timely delivery to your location with 24-hour customer support and same-day delivery options for urgent needs.'
+      title: 'Global Transport & Pipelines',
+      desc: 'Utilizing leak-proof smart pipelines and double-hull cargo tanker fleets to secure global energy delivery.'
     }
   ];
 
@@ -130,15 +130,15 @@ export default function HomeView({
             {/* Introductory Column */}
             <div className="space-y-4 lg:pr-4">
               <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">How It Works</span>
-              <h2 className="font-display text-3xl font-bold tracking-tight">Simple Process</h2>
+              <h2 className="font-display text-3xl font-bold tracking-tight">Supply Integration</h2>
               <p className="text-sm text-gray-400 leading-relaxed">
-                Getting reliable energy solutions is easy. From consultation to delivery, we ensure a seamless experience for all our clients.
+                Through operational optimization, our integrated supply chain secures hydrocarbon flows from original geological reservoir to regional fuel terminals.
               </p>
               <button 
                 onClick={onNavigateToAbout}
                 className="inline-flex items-center gap-1 text-sm font-semibold text-brand-accent hover:text-white transition group pt-2"
               >
-                Learn More About Us
+                Learn Corporate Strategy
                 <ChevronRight className="h-4 w-4 group-hover:translate-x-1 transition" />
               </button>
             </div>
@@ -191,31 +191,31 @@ export default function HomeView({
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-brand-accent text-white p-6 rounded-xl shadow-xl hidden sm:block max-w-xs">
-                <span className="block font-mono text-xs uppercase tracking-widest text-white/80">Service Standard</span>
-                <span className="block text-3xl font-display font-bold mt-1">24/7 Support</span>
-                <span className="block text-xs text-white/80 mt-1">Same-day delivery available with professional customer support.</span>
+                <span className="block font-mono text-xs uppercase tracking-widest text-white/80">HSE Standard</span>
+                <span className="block text-3xl font-display font-bold mt-1">100% Safety</span>
+                <span className="block text-xs text-white/80 mt-1">Zero recordable incident mandate across offshore & onshore units.</span>
               </div>
             </div>
 
             {/* Editorial Content Column */}
             <div className="lg:col-span-7 space-y-6 lg:pl-6">
-              <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Our Mission</span>
+              <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Enterprise Mission</span>
               <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-brand-dark">
-                Powering Businesses & Communities
+                Driving Energy Progress
               </h2>
 
               <div className="space-y-4">
                 <div className="border-l-4 border-brand-accent pl-4">
-                  <h3 className="font-display text-lg font-semibold text-brand-dark">Dependable Energy Solutions</h3>
+                  <h3 className="font-display text-lg font-semibold text-brand-dark">Securing Peak Hydrocarbon Yield</h3>
                   <p className="text-sm text-brand-muted mt-1 leading-relaxed">
-                    We provide high-quality petroleum products and energy solutions that power businesses and communities efficiently. Our commitment to quality ensures your operations never stop.
+                    Primo enforces peak operational efficiency across extraction and distillation. By optimizing logistics networks, we yield consistent fuel supply while maintaining zero-incident environmental safety.
                   </p>
                 </div>
 
                 <div className="border-l-4 border-brand-accent pl-4">
-                  <h3 className="font-display text-lg font-semibold text-brand-dark">Customer-Centric Approach</h3>
+                  <h3 className="font-display text-lg font-semibold text-brand-dark">Investing in Transitional Bio-fuels</h3>
                   <p className="text-sm text-brand-muted mt-1 leading-relaxed">
-                    Our commitment to professionalism, integrity, and customer satisfaction has positioned us as a reliable partner for businesses across Nigeria.
+                    Primo invests heavily in carbon capture and storage (CCS), next-generation hydrogen fuel matrices, and renewable solar power arrays to secure clean future energy.
                   </p>
                 </div>
               </div>
@@ -224,15 +224,15 @@ export default function HomeView({
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs font-semibold text-brand-dark">
                 <div className="flex items-center gap-2 bg-brand-light px-3 py-2 rounded-lg">
                   <CheckCircle2 className="h-4 w-4 text-brand-accent" />
-                  Integrity
+                  Mission: Global Power
                 </div>
                 <div className="flex items-center gap-2 bg-brand-light px-3 py-2 rounded-lg">
                   <CheckCircle2 className="h-4 w-4 text-brand-accent" />
-                  Excellence
+                  Vision: Clean Transition
                 </div>
                 <div className="flex items-center gap-2 bg-brand-light px-3 py-2 rounded-lg">
                   <CheckCircle2 className="h-4 w-4 text-brand-accent" />
-                  Reliability
+                  Values: Safety & Excellence
                 </div>
               </div>
 
@@ -260,12 +260,12 @@ export default function HomeView({
             variants={sectionFadeIn}
             className="text-center max-w-xl mx-auto mb-16 space-y-3"
           >
-            <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Our Services</span>
+            <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Our Operational Divisions</span>
             <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-brand-dark">
-              Energy Solutions for Your Business
+              Meeting World Energy Demand
             </h2>
             <p className="text-sm text-brand-muted leading-relaxed">
-              From diesel supply to energy consulting, we provide comprehensive petroleum products and logistics services to keep your operations running smoothly.
+              Leading global operations across upstream deepwater exploration, midstream transport logistics, and downstream refining.
             </p>
           </motion.div>
 
@@ -311,7 +311,7 @@ export default function HomeView({
               onClick={onNavigateToServices}
               className="inline-flex items-center gap-2 bg-brand-dark hover:bg-black text-white px-7 py-3 rounded-lg text-xs font-bold tracking-wider uppercase transition"
             >
-              View All Services
+              View All Divisions
               <ChevronRight className="h-4 w-4" />
             </button>
           </div>
@@ -324,13 +324,13 @@ export default function HomeView({
           
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
             <div className="space-y-3">
-              <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Our Achievements</span>
+              <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Major Field Projects</span>
               <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-brand-dark">
-                Building Trust & Excellence
+                Engineering Major Infrastructure
               </h2>
             </div>
             <p className="text-sm text-brand-muted max-w-md">
-              From CAC registration to multi-state service coverage, we continue to grow and serve businesses across Nigeria with reliable energy solutions.
+              From deepwater offshore installations to automated wellfield pumpjacks, we execute mega energy projects with precision.
             </p>
           </div>
 
@@ -381,10 +381,10 @@ export default function HomeView({
           >
             <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Client Testimonials</span>
             <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-white">
-              Trusted by Nigerian Businesses
+              Trusted by Energy Buyers Globally
             </h2>
             <p className="text-sm text-gray-400">
-              Primo Energy serves diverse industries across Nigeria with reliable petroleum products and energy solutions.
+              Primo powers commercial fleets, industrial refineries, and power grids across continents.
             </p>
           </motion.div>
 
@@ -447,17 +447,17 @@ export default function HomeView({
             
             {/* Core copy and metric bars */}
             <div className="space-y-6">
-              <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Our Performance</span>
+              <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Engineering Excellence</span>
               <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-brand-dark">
-                Delivering Excellence
+                Shaping the Energy Future
               </h2>
               
               <div className="space-y-4 text-xs text-brand-muted leading-relaxed">
                 <p>
-                  <strong>Reliable Fuel Supply:</strong> We ensure consistent delivery of high-quality petroleum products to keep your operations running smoothly without interruption.
+                  <strong>Advanced Drilling & Refining Analytics:</strong> We engineer predictive core drilling telemetry and carbon sequestration modules that dramatically reduce fugitive emissions across extraction field terminals.
                 </p>
                 <p>
-                  <strong>Competitive Pricing:</strong> Our market-competitive wholesale pricing and bulk supply capability help businesses optimize their energy costs.
+                  <strong>A Proven Record of Capital Execution:</strong> With strict HSE blueprints and high-spec logistics integration, we assure mega project delivery within schedule and zero regulatory friction.
                 </p>
               </div>
 
@@ -465,7 +465,17 @@ export default function HomeView({
               <div className="space-y-4 pt-2">
                 <div>
                   <div className="flex justify-between text-xs font-bold text-brand-dark mb-1">
-                    <span>On-Time Delivery</span>
+                    <span>Deepwater Technology Integration</span>
+                    <span>97%</span>
+                  </div>
+                  <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
+                    <div className="bg-brand-accent h-full rounded-full" style={{ width: '97%' }} />
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex justify-between text-xs font-bold text-brand-dark mb-1">
+                    <span>Petrochemical Distillation Purity</span>
                     <span>98%</span>
                   </div>
                   <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
@@ -475,17 +485,7 @@ export default function HomeView({
 
                 <div>
                   <div className="flex justify-between text-xs font-bold text-brand-dark mb-1">
-                    <span>Customer Satisfaction</span>
-                    <span>99%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
-                    <div className="bg-brand-accent h-full rounded-full" style={{ width: '99%' }} />
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex justify-between text-xs font-bold text-brand-dark mb-1">
-                    <span>Product Quality</span>
+                    <span>HSE Safety & Environmental Compliance</span>
                     <span>100%</span>
                   </div>
                   <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
@@ -495,11 +495,11 @@ export default function HomeView({
 
                 <div>
                   <div className="flex justify-between text-xs font-bold text-brand-dark mb-1">
-                    <span>24/7 Support Availability</span>
-                    <span>100%</span>
+                    <span>On-Time Maritime & Pipeline Dispatch</span>
+                    <span>95%</span>
                   </div>
                   <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
-                    <div className="bg-brand-accent h-full rounded-full" style={{ width: '100%' }} />
+                    <div className="bg-brand-accent h-full rounded-full" style={{ width: '95%' }} />
                   </div>
                 </div>
               </div>
@@ -509,7 +509,7 @@ export default function HomeView({
                   onClick={onRequestQuote}
                   className="bg-brand-accent hover:bg-brand-accent-hover text-white px-6 py-3.5 text-xs font-bold tracking-wider uppercase rounded-lg transition shadow-xs hover:shadow-md"
                 >
-                  Request a Quote
+                  Request a Commercial Quote
                 </button>
               </div>
             </div>
@@ -528,8 +528,8 @@ export default function HomeView({
               
               {/* Floating technical label */}
               <div className="absolute top-4 left-4 bg-brand-dark/95 text-white py-3 px-4 rounded-lg backdrop-blur-xs text-[10px] font-mono tracking-wider border border-white/10 shadow-lg">
-                <span>SERVICE STATUS: ACTIVE</span>
-                <span className="block text-brand-accent font-bold mt-0.5">24/7 SUPPORT // SAME-DAY DELIVERY</span>
+                <span>REFINERY STATUS: OPERATIONAL</span>
+                <span className="block text-brand-accent font-bold mt-0.5">THROUGHPUT: 250,000 BPD // SECURE</span>
               </div>
             </div>
 

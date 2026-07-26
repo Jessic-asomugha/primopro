@@ -29,18 +29,18 @@ export default function Footer({ onNav }: FooterProps) {
                   primo<span className="text-brand-accent">.</span>
                 </span>
                 <span className="block text-[8px] font-semibold tracking-widest text-gray-400 uppercase -mt-1">
-                  Reliable Energy Solutions. Delivered with Excellence.
+                  Oil & Energy Solutions
                 </span>
               </div>
             </div>
             
             <p className="text-sm text-gray-400 leading-relaxed max-w-sm">
-              Primo Energy Oil & Gas Co. Limited is a Nigerian energy company committed to delivering high-quality petroleum products and energy solutions to businesses, industries, institutions, and households.
+              Primo is committed to securing global energy requirements through sustainable exploration, high-yield refining, and strategic oil, gas, and low-carbon energy infrastructure.
             </p>
 
             <div className="pt-2 text-xs text-gray-500">
-              &copy; {currentYear} Primo Energy Oil & Gas Co. Limited. All rights reserved.
-              <span className="block mt-1">CAC Registration No: 7830522</span>
+              &copy; {currentYear} Primo Energy Corporation. All rights reserved.
+              <span className="block mt-1">Powered by Primo Infrastructure.</span>
             </div>
           </div>
 
@@ -101,25 +101,25 @@ export default function Footer({ onNav }: FooterProps) {
           {/* Column 3: Corporate Contacts */}
           <div className="space-y-4">
             <h3 className="font-display text-base font-bold uppercase tracking-wider text-white border-b border-white/10 pb-2">
-              Head Office
+              Global Headquarters
             </h3>
             <div className="space-y-3 text-sm text-gray-400">
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-brand-accent shrink-0 mt-0.5" />
                 <span>
-                  Abuja, Federal Capital Territory, Nigeria
+                  4096 Modesto, CA 95350, United States
                 </span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-brand-accent shrink-0" />
-                <a href="tel:+234XXXXXXXXXX" className="font-mono hover:text-white transition">
-                  +234 XXX XXX XXXX
+                <a href="tel:+12094728764" className="font-mono hover:text-white transition">
+                  +1 (209) 472-8764
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-brand-accent shrink-0" />
-                <a href="mailto:info@primoenergy.com.ng" className="hover:text-white transition">
-                  info@primoenergy.com.ng
+                <a href="mailto:info@primoenergy.com" className="hover:text-white transition">
+                  info@primoenergy.com
                 </a>
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function Footer({ onNav }: FooterProps) {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                24-Hour Customer Support
+                Dispatch Center Active 24/7
               </div>
             </div>
           </div>

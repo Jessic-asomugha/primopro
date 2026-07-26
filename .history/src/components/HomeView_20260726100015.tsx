@@ -509,7 +509,7 @@ export default function HomeView({
                   onClick={onRequestQuote}
                   className="bg-brand-accent hover:bg-brand-accent-hover text-white px-6 py-3.5 text-xs font-bold tracking-wider uppercase rounded-lg transition shadow-xs hover:shadow-md"
                 >
-                  Request a Quote
+                  Request a Commercial Quote
                 </button>
               </div>
             </div>
@@ -528,8 +528,8 @@ export default function HomeView({
               
               {/* Floating technical label */}
               <div className="absolute top-4 left-4 bg-brand-dark/95 text-white py-3 px-4 rounded-lg backdrop-blur-xs text-[10px] font-mono tracking-wider border border-white/10 shadow-lg">
-                <span>SERVICE STATUS: ACTIVE</span>
-                <span className="block text-brand-accent font-bold mt-0.5">24/7 SUPPORT // SAME-DAY DELIVERY</span>
+                <span>REFINERY STATUS: OPERATIONAL</span>
+                <span className="block text-brand-accent font-bold mt-0.5">THROUGHPUT: 250,000 BPD // SECURE</span>
               </div>
             </div>
 

@@ -7,38 +7,38 @@ interface AboutViewProps {
 }
 
 export default function AboutView({ onRequestQuote }: AboutViewProps) {
-  const industries = [
+  const leadership = [
     {
-      name: 'Oil & Gas',
-      role: 'Energy Sector',
-      desc: 'Providing reliable fuel supply for upstream and downstream operations across the Nigerian energy industry.',
-      avatarUrl: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&h=500&q=80'
+      name: 'Dr. Kwame Osei',
+      role: 'Chief Executive Officer & Founder',
+      desc: 'Former Director of Upstream Exploration with 24 years leading deepwater offshore operations and reservoir characterization across West Africa and the Gulf of Guinea.',
+      avatarUrl: 'https://images.unsplash.com/photo-1531384441138-2736e62e0919?auto=format&fit=crop&w=500&h=500&q=80'
     },
     {
-      name: 'Construction',
-      role: 'Infrastructure Development',
-      desc: 'Powering construction sites with dependable diesel and petroleum products for heavy machinery and equipment.',
-      avatarUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=500&h=500&q=80'
+      name: 'Amina Bello, M.Sc.',
+      role: 'Chief Technology Officer',
+      desc: 'Petroleum & Chemical Engineering lead driving Primo low-carbon transitional fuels, catalytic refining optimizations, and smart pipeline telemetry.',
+      avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&h=500&q=80'
     },
     {
-      name: 'Manufacturing',
-      role: 'Industrial Production',
-      desc: 'Ensuring uninterrupted operations for manufacturing industries with consistent fuel supply and logistics.',
-      avatarUrl: 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=500&h=500&q=80'
+      name: 'Olusegun Adebayo, P.Eng',
+      role: 'Head of Marine & Field Infrastructure',
+      desc: 'Overlooks offshore FPSO vessel fleets, sub-sea pipe networks, and double-hull LNG tanker logistics across international maritime channels.',
+      avatarUrl: 'https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?auto=format&fit=crop&w=500&h=500&q=80'
     },
     {
-      name: 'Healthcare',
-      role: 'Medical Facilities',
-      desc: 'Supporting hospitals and healthcare institutions with reliable energy solutions for critical medical services.',
-      avatarUrl: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=500&h=500&q=80'
+      name: 'Zuri Mthembu, CPA',
+      role: 'Chief Financial Officer',
+      desc: 'Specializes in energy commodity trading, capital allocation for mega oil & gas infrastructure projects, and ESG sustainability investments.',
+      avatarUrl: 'https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=500&h=500&q=80'
     }
   ];
 
-  const serviceAreas = [
-    { year: 'FCT', title: 'Abuja', desc: 'Federal Capital Territory - Head Office and primary operations base.' },
-    { year: 'KD', title: 'Kaduna', desc: 'Major commercial hub with comprehensive fuel distribution network.' },
-    { year: 'NS', title: 'Nasarawa', desc: 'Expanding service coverage for industrial and residential clients.' },
-    { year: 'NG', title: 'Niger State & Kogi', desc: 'Extended reach to support growing energy demands in the region.' }
+  const milestones = [
+    { year: '2008', title: 'Founding of Primo', desc: 'Established as a specialized seismic surveying and hydrocarbon exploration firm.' },
+    { year: '2014', title: 'Smart Field Automation', desc: 'Introduced automated wellhead telemetry across 120 active production sites.' },
+    { year: '2019', title: 'Deepwater Rig Deployment', desc: 'Successfully deployed ultra-deepwater drilling platforms operating at depths of 2,400m.' },
+    { year: '2024', title: 'Transitional Biofuel Hub', desc: 'Initiated utility-scale biofuel blending, achieving net emissions reduction of 22%.' }
   ];
 
   const fadeInVariants = {
@@ -75,7 +75,7 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
             className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-accent px-3 py-1 rounded-full bg-brand-accent/10 border border-brand-accent/20"
           >
             <Globe2 className="h-3.5 w-3.5" />
-            Established 2024 • CAC Reg: 7830522
+            Global Energy Heritage • Since 2008
           </motion.span>
           <motion.h1 
             initial={{ opacity: 0, y: 15 }}
@@ -83,7 +83,8 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
           >
-            About <span className="text-brand-accent">Primo Energy</span>
+            Engineering Africa & Global <br />
+            <span className="text-brand-accent">Energy Independence</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 15 }}
@@ -91,7 +92,7 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed"
           >
-            Primo Energy Oil & Gas Co. Limited is a Nigerian energy company committed to delivering high-quality petroleum products and energy solutions to businesses, industries, institutions, and households.
+            Primo is a vertically-integrated oil, gas, and energy corporation. We secure high-yield hydrocarbon assets, refine under strict international quality standards, and pioneer clean transitional power grids.
           </motion.p>
         </div>
       </section>
@@ -114,7 +115,7 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
               </div>
               <h3 className="font-display text-lg font-bold">Our Mission</h3>
               <p className="text-xs text-brand-muted leading-relaxed">
-                To provide dependable, high-quality energy solutions that power businesses and communities efficiently.
+                To fulfill global industrial oil and fuel requirements securely and safely, while pioneering smart technological refinements that minimize carbon footprint during transition.
               </p>
             </motion.div>
 
@@ -131,7 +132,7 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
               </div>
               <h3 className="font-display text-lg font-bold">Our Vision</h3>
               <p className="text-xs text-brand-muted leading-relaxed">
-                To become one of Africa's leading integrated energy solution providers.
+                To remain a premier tier-one sustainable energy partner, setting the absolute benchmark for zero-accident safety compliance and high-spec chemical feedstock synthesis.
               </p>
             </motion.div>
 
@@ -146,9 +147,9 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
               <div className="h-12 w-12 rounded-lg bg-brand-accent/10 flex items-center justify-center text-brand-accent">
                 <Shield className="h-6 w-6" />
               </div>
-              <h3 className="font-display text-lg font-bold">Core Values</h3>
+              <h3 className="font-display text-lg font-bold">Environmental Safety</h3>
               <p className="text-xs text-brand-muted leading-relaxed">
-                Integrity, Excellence, Reliability, Customer Satisfaction, Innovation, Safety, Sustainability
+                Operating with a zero-incident mandate (HSE). Our pipeline networks employ predictive machine learning sensors to intercept leakages before ecological damages can occur.
               </p>
             </motion.div>
 
@@ -168,34 +169,34 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
               transition={{ duration: 0.5 }}
               className="space-y-6"
             >
-              <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Our Credibility</span>
-              <h2 className="font-display text-3xl font-bold tracking-tight text-brand-dark">Why Choose Us</h2>
+              <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">HSE Quality Standards</span>
+              <h2 className="font-display text-3xl font-bold tracking-tight text-brand-dark">Uncompromising Safety Code</h2>
               <p className="text-sm text-brand-muted leading-relaxed">
-                Primo Energy combines quality petroleum products with dependable logistics and outstanding customer service. We are committed to delivering fuel safely, promptly, and at competitive prices, helping businesses operate without interruption.
+                Primo believes commercial success is fully dependent on protecting our workforce, local communities, and delicate marine ecosystems. We maintain active HSE certifications across all operational fields.
               </p>
 
               <div className="space-y-3 pt-2">
                 <div className="flex items-start gap-3 bg-white p-4 rounded-lg border border-gray-100 shadow-2xs">
                   <HardHat className="h-5 w-5 text-brand-accent shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="text-xs font-bold text-brand-dark">Licensed Nigerian Company</h4>
-                    <p className="text-[11px] text-brand-muted mt-0.5">Incorporated under the Corporate Affairs Commission (CAC) with registration number 7830522.</p>
+                    <h4 className="text-xs font-bold text-brand-dark">Zero Harm Workspaces</h4>
+                    <p className="text-[11px] text-brand-muted mt-0.5">Continuous field training and real-time site inspections prevent pipeline accidents.</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3 bg-white p-4 rounded-lg border border-gray-100 shadow-2xs">
                   <Award className="h-5 w-5 text-brand-accent shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="text-xs font-bold text-brand-dark">Fast & Reliable Delivery</h4>
-                    <p className="text-[11px] text-brand-muted mt-0.5">Same-day delivery available with 24-hour customer support for urgent requirements.</p>
+                    <h4 className="text-xs font-bold text-brand-dark">ISO Certification Elite</h4>
+                    <p className="text-[11px] text-brand-muted mt-0.5">Compliant with ISO 9001, 14001, and 45001 frameworks for total quality control.</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3 bg-white p-4 rounded-lg border border-gray-100 shadow-2xs">
                   <Building2 className="h-5 w-5 text-brand-accent shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="text-xs font-bold text-brand-dark">Competitive Pricing</h4>
-                    <p className="text-[11px] text-brand-muted mt-0.5">Market-competitive wholesale pricing with bulk supply capability.</p>
+                    <h4 className="text-xs font-bold text-brand-dark">Regulatory Compliance</h4>
+                    <p className="text-[11px] text-brand-muted mt-0.5">Fully aligned with EPA, OSHA, and international marine transport safety treaties.</p>
                   </div>
                 </div>
               </div>
@@ -218,7 +219,7 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
                 />
               </div>
               <div className="absolute top-4 right-4 bg-brand-dark text-white px-4 py-2 rounded-lg text-xs font-mono border border-white/10 shadow-md">
-                <span>ESTABLISHED: 14 AUGUST 2024</span>
+                <span>SAFETY INCIDENTS IN 2025: 0</span>
               </div>
             </motion.div>
 
@@ -230,12 +231,12 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-xl mx-auto mb-16 space-y-2">
-            <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Service Coverage</span>
-            <h2 className="font-display text-3xl font-bold tracking-tight text-brand-dark">Areas We Serve</h2>
+            <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Our Journey</span>
+            <h2 className="font-display text-3xl font-bold tracking-tight text-brand-dark">Chronology of Expansion</h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 relative">
-            {serviceAreas.map((m, index) => (
+            {milestones.map((m, index) => (
               <motion.div 
                 key={m.year} 
                 initial={{ opacity: 0, y: 20 }}
@@ -260,19 +261,19 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
       <section className="py-20 bg-brand-light">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-            <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Industries We Serve</span>
+            <span className="block text-xs font-bold uppercase tracking-widest text-brand-accent">Executive Board</span>
             <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-brand-dark">
-              Our Trusted Clients
+              African Executive Leadership
             </h2>
             <p className="text-xs sm:text-sm text-brand-muted">
-              Serving diverse sectors across Nigeria with reliable energy solutions tailored to specific industry needs.
+              Distinguished industry pioneers bringing decades of engineering, energy economics, and deepwater exploration expertise.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {industries.map((industry, idx) => (
+            {leadership.map((member, idx) => (
               <motion.div 
-                key={industry.name}
+                key={member.name}
                 initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -282,17 +283,17 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
                 <div>
                   <div className="h-64 overflow-hidden bg-gray-100 relative">
                     <img 
-                      src={industry.avatarUrl} 
-                      alt={industry.name} 
+                      src={member.avatarUrl} 
+                      alt={member.name} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                   <div className="p-6 space-y-2">
-                    <h4 className="font-display text-base font-bold text-brand-dark leading-snug">{industry.name}</h4>
-                    <span className="block text-[11px] text-brand-accent font-semibold uppercase tracking-wider">{industry.role}</span>
-                    <p className="text-[11px] text-brand-muted leading-relaxed pt-2 border-t border-gray-100">{industry.desc}</p>
+                    <h4 className="font-display text-base font-bold text-brand-dark leading-snug">{member.name}</h4>
+                    <span className="block text-[11px] text-brand-accent font-semibold uppercase tracking-wider">{member.role}</span>
+                    <p className="text-[11px] text-brand-muted leading-relaxed pt-2 border-t border-gray-100">{member.desc}</p>
                   </div>
                 </div>
               </motion.div>
@@ -304,7 +305,7 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
               onClick={onRequestQuote}
               className="bg-brand-accent hover:bg-brand-accent-hover text-white font-bold py-3.5 px-8 rounded-lg text-xs uppercase tracking-wider transition shadow-sm hover:shadow-md"
             >
-              Request a Quote
+              Partner With Primo Energy
             </button>
           </div>
         </div>
