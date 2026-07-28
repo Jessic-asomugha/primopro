@@ -4,7 +4,7 @@ export interface Service {
   description: string;
   longDescription: string;
   iconName: string;
-  category: 'supply' | 'logistics' | 'consulting';
+  category: 'upstream' | 'downstream' | 'midstream' | 'renewables' | 'support';
 }
 
 export interface Accomplishment {

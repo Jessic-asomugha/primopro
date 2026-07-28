@@ -146,7 +146,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                     <h4 className="text-[10px] font-bold text-gray-400 uppercase tracking-wider font-mono">Email</h4>
                     <p className="text-sm text-brand-dark font-medium mt-1">
                       <a href="mailto:info@primoenergy.com.ng" className="hover:text-brand-accent transition">
-                        info@primoenergy.com.ng
+                        info@primo.com.ng
                       </a>
                     </p>
                   </div>

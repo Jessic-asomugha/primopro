@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { 
   Compass, Factory, Truck, Zap, Wrench, ShieldCheck, 
-  ChevronRight, Settings, ArrowRight, Fuel, Droplet, Lightbulb, Package
+  ChevronRight, Settings, ArrowRight
 } from 'lucide-react';
 import { SERVICES_DATA } from '../data';
 import { Service } from '../types';
@@ -36,10 +36,6 @@ export default function ServicesView({ onRequestQuoteWithService }: ServicesView
       case 'Zap': return Zap;
       case 'Wrench': return Wrench;
       case 'ShieldCheck': return ShieldCheck;
-      case 'Fuel': return Fuel;
-      case 'Droplet': return Droplet;
-      case 'Lightbulb': return Lightbulb;
-      case 'Package': return Package;
       default: return Settings;
     }
   };
@@ -101,12 +97,7 @@ export default function ServicesView({ onRequestQuoteWithService }: ServicesView
                   <button
                     onClick={() => {
                       setActiveServiceId(service.id);
-                      // Only toggle mobile expansion if it's the same service
-                      if (activeServiceId === service.id) {
-                        setIsMobileExpanded(!isMobileExpanded);
-                      } else {
-                        setIsMobileExpanded(true);
-                      }
+                      setIsMobileExpanded(!isMobileExpanded);
                     }}
                     className="w-full text-left p-6 flex items-center justify-between gap-4"
                   >

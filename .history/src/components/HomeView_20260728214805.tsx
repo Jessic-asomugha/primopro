@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ChevronRight, ArrowRight, Compass, Factory, Truck, Zap, CheckCircle2, Star, Quote, Flame, ShieldCheck, Award, Building2 } from 'lucide-react';
+import { ChevronRight, ArrowRight, Compass, Factory, Truck, Zap, CheckCircle2, Star, Quote, Flame } from 'lucide-react';
 import { SERVICES_DATA, ACCOMPLISHMENTS_DATA, TESTIMONIALS_DATA } from '../data';
 
 interface HomeViewProps {

@@ -98,7 +98,7 @@ export default function QuoteModal({ isOpen, onClose, preselectedService = '' }:
               {!submitted ? (
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <p className="text-sm text-gray-400">
-                    Provide your engineering, drilling, or distribution scope details below. We will review and prepare a custom feasibility plan.
+                    Provide your engineering, drilling, or distribution scope details below. Our technical sales division will review and prepare a custom feasibility plan.
                   </p>
 
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
