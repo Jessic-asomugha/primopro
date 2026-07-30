@@ -455,7 +455,7 @@ export default function HomeView({
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 max-w-xl mx-auto gap-8">
             {TESTIMONIALS_DATA.map((t, index) => (
               <motion.div 
                 key={t.id} 
@@ -463,11 +463,7 @@ export default function HomeView({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className={`rounded-xl p-8 transition-all duration-300 border relative ${
-                  index % 2 === 1 
-                    ? 'bg-brand-accent/5 border-brand-accent/20 hover:border-brand-accent/40' 
-                    : 'bg-white/5 border-white/5 hover:border-white/15'
-                }`}
+                className="rounded-xl p-8 transition-all duration-300 border relative bg-white/5 border-white/5 hover:border-white/15"
               >
                 <Quote className="absolute top-6 right-6 h-8 w-8 text-brand-accent/20" />
                 
@@ -528,46 +524,23 @@ export default function HomeView({
                 </p>
               </div>
 
-              {/* Progress bars */}
-              <div className="space-y-4 pt-2">
-                <div>
-                  <div className="flex justify-between text-xs font-bold text-brand-dark mb-1">
-                    <span>On-Time Delivery</span>
-                    <span>98%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
-                    <div className="bg-brand-accent h-full rounded-full" style={{ width: '98%' }} />
-                  </div>
+              {/* Verified service highlights (from client brief, no invented figures) */}
+              <div className="space-y-3 pt-2">
+                <div className="flex items-center gap-2.5 text-xs font-semibold text-brand-dark">
+                  <CheckCircle2 className="h-4 w-4 text-brand-accent shrink-0" />
+                  Same-day delivery available
                 </div>
-
-                <div>
-                  <div className="flex justify-between text-xs font-bold text-brand-dark mb-1">
-                    <span>Customer Satisfaction</span>
-                    <span>99%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
-                    <div className="bg-brand-accent h-full rounded-full" style={{ width: '99%' }} />
-                  </div>
+                <div className="flex items-center gap-2.5 text-xs font-semibold text-brand-dark">
+                  <CheckCircle2 className="h-4 w-4 text-brand-accent shrink-0" />
+                  24-hour customer support
                 </div>
-
-                <div>
-                  <div className="flex justify-between text-xs font-bold text-brand-dark mb-1">
-                    <span>Product Quality</span>
-                    <span>100%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
-                    <div className="bg-brand-accent h-full rounded-full" style={{ width: '100%' }} />
-                  </div>
+                <div className="flex items-center gap-2.5 text-xs font-semibold text-brand-dark">
+                  <CheckCircle2 className="h-4 w-4 text-brand-accent shrink-0" />
+                  Bulk supply capability
                 </div>
-
-                <div>
-                  <div className="flex justify-between text-xs font-bold text-brand-dark mb-1">
-                    <span>24/7 Support Availability</span>
-                    <span>100%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
-                    <div className="bg-brand-accent h-full rounded-full" style={{ width: '100%' }} />
-                  </div>
+                <div className="flex items-center gap-2.5 text-xs font-semibold text-brand-dark">
+                  <CheckCircle2 className="h-4 w-4 text-brand-accent shrink-0" />
+                  Competitive wholesale pricing
                 </div>
               </div>
 

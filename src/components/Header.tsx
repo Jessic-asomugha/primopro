@@ -69,11 +69,11 @@ export default function Header({ activePage, setActivePage, onRequestQuote }: He
           {/* Action CTA */}
           <div className="hidden md:flex items-center gap-4">
             <a 
-              href="tel:+234XXXXXXXXXX" 
+              href="tel:+2347025513466" 
               className="flex items-center gap-2 text-sm text-brand-dark/70 hover:text-brand-accent transition-colors"
             >
               <Phone className="h-4 w-4 text-brand-accent" />
-              <span className="font-mono font-medium">+234 XXX XXX XXXX</span>
+              <span className="font-mono font-medium">+234 702 551 3466</span>
             </a>
             <button
               onClick={onRequestQuote}
@@ -117,8 +117,8 @@ export default function Header({ activePage, setActivePage, onRequestQuote }: He
             <div className="border-t border-gray-100 pt-4 mt-2 space-y-4">
               <div className="flex items-center justify-between px-4 text-sm text-brand-muted">
                 <span>Direct Inquiries:</span>
-                <a href="tel:+234XXXXXXXXXX" className="font-mono font-semibold text-brand-dark flex items-center gap-1.5 hover:text-brand-accent">
-                  <Phone className="h-3.5 w-3.5" /> +234 XXX XXX XXXX
+                <a href="tel:+2347025513466" className="font-mono font-semibold text-brand-dark flex items-center gap-1.5 hover:text-brand-accent">
+                  <Phone className="h-3.5 w-3.5" /> +234 702 551 3466
                 </a>
               </div>
               <button

@@ -78,29 +78,5 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     company: 'Abuja-based Manufacturing Company',
     quote: 'Primo Energy has consistently delivered quality diesel on time. Their professionalism and reliability have made them our preferred supplier.',
     avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80'
-  },
-  {
-    id: 't2',
-    name: 'Facility Director',
-    role: 'Facility Director',
-    company: 'Major Hospital in FCT',
-    quote: 'Same-day delivery service has been crucial for our operations. Primo Energy understands the importance of reliable power supply for healthcare facilities.',
-    avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&h=150&q=80'
-  },
-  {
-    id: 't3',
-    name: 'Project Manager',
-    role: 'Project Manager',
-    company: 'Construction Company',
-    quote: 'Their bulk fuel delivery capability and competitive pricing have helped us complete projects on schedule. Highly recommended for industrial fuel needs.',
-    avatarUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80'
-  },
-  {
-    id: 't4',
-    name: 'Procurement Officer',
-    role: 'Procurement Officer',
-    company: 'Educational Institution',
-    quote: 'Professional customer support and competitive market pricing make Primo Energy stand out. They truly understand the energy needs of institutions.',
-    avatarUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&h=150&q=80'
   }
 ];

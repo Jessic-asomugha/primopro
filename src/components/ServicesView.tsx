@@ -137,12 +137,12 @@ export default function ServicesView({ onRequestQuoteWithService }: ServicesView
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs pt-2">
                         <div className="p-4 bg-white rounded-lg border border-gray-100 space-y-1">
-                          <span className="block text-[10px] font-bold text-gray-400 uppercase font-mono">Industry Compliance</span>
-                          <span className="block font-semibold text-brand-dark">ISO 9001, ISO 14001, ISO 45001</span>
+                          <span className="block text-[10px] font-bold text-gray-400 uppercase font-mono">Company Status</span>
+                          <span className="block font-semibold text-brand-dark">CAC Reg. No. 7830522</span>
                         </div>
                         <div className="p-4 bg-white rounded-lg border border-gray-100 space-y-1">
-                          <span className="block text-[10px] font-bold text-gray-400 uppercase font-mono">Response Protocol</span>
-                          <span className="block font-semibold text-brand-accent">24/7 Rapid Field Response</span>
+                          <span className="block text-[10px] font-bold text-gray-400 uppercase font-mono">Support Availability</span>
+                          <span className="block font-semibold text-brand-accent">24-Hour Customer Support</span>
                         </div>
                       </div>
 
@@ -190,12 +190,12 @@ export default function ServicesView({ onRequestQuoteWithService }: ServicesView
 
                 <div className="grid grid-cols-2 gap-4 text-xs pt-2">
                   <div className="p-4 bg-brand-light rounded-lg border border-gray-100 space-y-1">
-                    <span className="block text-[10px] font-bold text-gray-400 uppercase font-mono">Industry Compliance</span>
-                    <span className="block font-semibold text-brand-dark">ISO 9001, ISO 14001, ISO 45001</span>
+                    <span className="block text-[10px] font-bold text-gray-400 uppercase font-mono">Company Status</span>
+                    <span className="block font-semibold text-brand-dark">CAC Reg. No. 7830522</span>
                   </div>
                   <div className="p-4 bg-brand-light rounded-lg border border-gray-100 space-y-1">
-                    <span className="block text-[10px] font-bold text-gray-400 uppercase font-mono">Response Protocol</span>
-                    <span className="block font-semibold text-brand-accent">24/7 Rapid Field Response</span>
+                    <span className="block text-[10px] font-bold text-gray-400 uppercase font-mono">Support Availability</span>
+                    <span className="block font-semibold text-brand-accent">24-Hour Customer Support</span>
                   </div>
                 </div>
 

@@ -1,5 +1,14 @@
 import React from 'react';
-import { Flame, Check, Mail, MapPin, Phone } from 'lucide-react';
+import { Flame, Check, Mail, MapPin, Phone, Facebook, Instagram, Linkedin } from 'lucide-react';
+
+// Lucide doesn't ship a TikTok icon, so a small inline brand mark is used instead.
+function TikTokIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M16.6 5.82c-1.02-.88-1.64-2.13-1.72-3.52h-3.1v13.86c0 1.5-1.22 2.72-2.72 2.72a2.72 2.72 0 0 1 0-5.44c.28 0 .55.04.8.12V10.5a5.86 5.86 0 0 0-.8-.06 5.82 5.82 0 1 0 5.82 5.82V9.02a7.9 7.9 0 0 0 4.62 1.48V7.4a4.85 4.85 0 0 1-2.9-1.58z" />
+    </svg>
+  );
+}
 
 interface FooterProps {
   onNav: (page: 'home' | 'services' | 'about' | 'contact') => void;
@@ -98,14 +107,14 @@ export default function Footer({ onNav }: FooterProps) {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-brand-accent shrink-0" />
-                <a href="tel:+234XXXXXXXXXX" className="font-mono hover:text-white transition">
+                <a href="tel:+2347025513466" className="font-mono hover:text-white transition">
                   +2347025513466, +234808860893
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-brand-accent shrink-0" />
                 <a href="mailto:info@primoenergy.com.ng" className="hover:text-white transition">
-                  info@primo.com.ng
+                  info@primoenergy.com.ng
                 </a>
               </div>
             </div>
@@ -118,6 +127,45 @@ export default function Footer({ onNav }: FooterProps) {
                 </span>
                 24-Hour Customer Support
               </div>
+            </div>
+
+            <div className="flex items-center gap-3 pt-2">
+              <a
+                href="https://facebook.com/PrimoEnergyOilandGas"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Primo Energy on Facebook"
+                className="h-9 w-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-accent hover:border-brand-accent/30 transition"
+              >
+                <Facebook className="h-4 w-4" />
+              </a>
+              <a
+                href="https://instagram.com/primoenergyoilandgas"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Primo Energy on Instagram"
+                className="h-9 w-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-accent hover:border-brand-accent/30 transition"
+              >
+                <Instagram className="h-4 w-4" />
+              </a>
+              <a
+                href="https://tiktok.com/@primoenergy20"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Primo Energy on TikTok"
+                className="h-9 w-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-accent hover:border-brand-accent/30 transition"
+              >
+                <TikTokIcon className="h-4 w-4" />
+              </a>
+              <a
+                href="https://linkedin.com/company/primo-energy-oil-gas-co-limited"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Primo Energy on LinkedIn"
+                className="h-9 w-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-accent hover:border-brand-accent/30 transition"
+              >
+                <Linkedin className="h-4 w-4" />
+              </a>
             </div>
           </div>
 

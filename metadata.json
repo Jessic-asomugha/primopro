@@ -1,6 +1,5 @@
 {
-  "name": "Primo Energy",
-  "description": "Corporate website for Primo, a leading oil, gas, and sustainable energy solutions enterprise.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "name": "Primo Energy Oil & Gas Co. Limited",
+  "description": "Corporate website for Primo Energy, a Nigerian petroleum products and energy logistics company.",
+  "requestFramePermissions": []
 }

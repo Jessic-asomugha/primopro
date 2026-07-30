@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Send, CheckCircle, FileText, ChevronRight } from 'lucide-react';
 import { QuoteRequest } from '../types';
+import { SERVICES_DATA } from '../data';
 
 interface QuoteModalProps {
   isOpen: boolean;
@@ -15,7 +16,7 @@ export default function QuoteModal({ isOpen, onClose, preselectedService = '' }:
     email: '',
     phone: '',
     company: '',
-    serviceType: preselectedService || 'exploration-drilling',
+    serviceType: preselectedService || SERVICES_DATA[0].id,
     projectScope: 'medium',
     timeline: '3-6-months',
     message: ''
@@ -48,7 +49,7 @@ export default function QuoteModal({ isOpen, onClose, preselectedService = '' }:
       email: '',
       phone: '',
       company: '',
-      serviceType: 'exploration-drilling',
+      serviceType: SERVICES_DATA[0].id,
       projectScope: 'medium',
       timeline: '3-6-months',
       message: ''
@@ -98,7 +99,7 @@ export default function QuoteModal({ isOpen, onClose, preselectedService = '' }:
               {!submitted ? (
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <p className="text-sm text-gray-400">
-                    Provide your engineering, drilling, or distribution scope details below. We will review and prepare a custom feasibility plan.
+                    Provide your fuel supply requirements below, and our team will get back to you with a competitive quote.
                   </p>
 
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -126,7 +127,7 @@ export default function QuoteModal({ isOpen, onClose, preselectedService = '' }:
                         required
                         value={formData.company}
                         onChange={handleChange}
-                        placeholder="Chevron, Apex Logistics, etc."
+                        placeholder="Your company name"
                         className="w-full rounded-lg bg-black/30 border border-white/15 px-3.5 py-2.5 text-sm text-white focus:outline-hidden focus:border-brand-accent transition"
                       />
                     </div>
@@ -166,7 +167,7 @@ export default function QuoteModal({ isOpen, onClose, preselectedService = '' }:
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
                     <div className="sm:col-span-1">
                       <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">
-                        Energy Service <span className="text-brand-accent">*</span>
+                        Service Needed <span className="text-brand-accent">*</span>
                       </label>
                       <select
                         name="serviceType"
@@ -174,18 +175,15 @@ export default function QuoteModal({ isOpen, onClose, preselectedService = '' }:
                         onChange={handleChange}
                         className="w-full rounded-lg bg-black/30 border border-white/15 px-3.5 py-2.5 text-sm text-white focus:outline-hidden focus:border-brand-accent transition"
                       >
-                        <option value="exploration-drilling">Exploration & Drilling</option>
-                        <option value="refining-processing">Refining & Processing</option>
-                        <option value="transport-distribution">Transport & Distribution</option>
-                        <option value="renewable-energy">Renewable Energy</option>
-                        <option value="maintenance-repair">Maintenance & Repair</option>
-                        <option value="management-sustainability">ESG Management</option>
+                        {SERVICES_DATA.map((service) => (
+                          <option key={service.id} value={service.id}>{service.title}</option>
+                        ))}
                       </select>
                     </div>
 
                     <div className="sm:col-span-1">
                       <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">
-                        Project Scale
+                        Supply Volume
                       </label>
                       <select
                         name="projectScope"
@@ -193,15 +191,15 @@ export default function QuoteModal({ isOpen, onClose, preselectedService = '' }:
                         onChange={handleChange}
                         className="w-full rounded-lg bg-black/30 border border-white/15 px-3.5 py-2.5 text-sm text-white focus:outline-hidden focus:border-brand-accent transition"
                       >
-                        <option value="small">Pilot Project (&lt; $500k)</option>
-                        <option value="medium">Medium Enterprise ($500k - $5M)</option>
-                        <option value="large">Major Infrastructure ($5M+)</option>
+                        <option value="small">Small (One-off / occasional order)</option>
+                        <option value="medium">Medium (Regular monthly supply)</option>
+                        <option value="large">Large (Bulk / ongoing contract)</option>
                       </select>
                     </div>
 
                     <div className="sm:col-span-1">
                       <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">
-                        Target Timeline
+                        When Do You Need It
                       </label>
                       <select
                         name="timeline"
@@ -209,24 +207,24 @@ export default function QuoteModal({ isOpen, onClose, preselectedService = '' }:
                         onChange={handleChange}
                         className="w-full rounded-lg bg-black/30 border border-white/15 px-3.5 py-2.5 text-sm text-white focus:outline-hidden focus:border-brand-accent transition"
                       >
-                        <option value="immediate">Immediate (&lt; 1 month)</option>
-                        <option value="3-6-months">3 - 6 Months</option>
-                        <option value="6-12-months">6 - 12 Months</option>
-                        <option value="future">Long-term / Strategic</option>
+                        <option value="immediate">Same-day / Urgent</option>
+                        <option value="3-6-months">Within the next week</option>
+                        <option value="6-12-months">Within the next month</option>
+                        <option value="future">Ongoing / Recurring supply</option>
                       </select>
                     </div>
                   </div>
 
                   <div>
                     <label className="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1.5">
-                      Scope of Work & Technical Requirements
+                      Additional Details
                     </label>
                     <textarea
                       name="message"
                       rows={3}
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Please outline the geological depths, shipping volumes, or renewable capacities required for this engagement..."
+                      placeholder="Tell us about the quantity, delivery location, or any specific requirements..."
                       className="w-full rounded-lg bg-black/30 border border-white/15 px-3.5 py-2.5 text-sm text-white focus:outline-hidden focus:border-brand-accent transition resize-none"
                     />
                   </div>
