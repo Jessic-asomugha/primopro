@@ -77,6 +77,6 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     role: 'Operations Manager',
     company: 'Abuja-based Manufacturing Company',
     quote: 'Primo Energy has consistently delivered quality diesel on time. Their professionalism and reliability have made them our preferred supplier.',
-    avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80'
+    avatarUrl: '/assets/oil-and-gas.jpg'
   }
 ];
