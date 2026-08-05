@@ -70,7 +70,7 @@ export default function ServicesView({ onRequestQuoteWithService }: ServicesView
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.id)}
-              className={`px-4 py-2 text-xs font-semibold rounded-lg border transition-all ${
+              className={`px-4 py-2 text-xs font-semibold  border transition-all ${
                 selectedCategory === cat.id
                   ? 'bg-brand-dark text-white border-brand-dark shadow-xs'
                   : 'bg-white text-brand-dark/70 border-gray-200 hover:text-brand-accent hover:border-brand-accent/20'
@@ -93,7 +93,7 @@ export default function ServicesView({ onRequestQuoteWithService }: ServicesView
               return (
                 <div 
                   key={service.id} 
-                  className={`rounded-xl border bg-white overflow-hidden transition-all duration-300 ${
+                  className={` border bg-white overflow-hidden transition-all duration-300 ${
                     isActive ? 'border-brand-accent shadow-sm' : 'border-gray-100 hover:border-gray-200 shadow-2xs'
                   }`}
                 >
@@ -111,7 +111,7 @@ export default function ServicesView({ onRequestQuoteWithService }: ServicesView
                     className="w-full text-left p-6 flex items-center justify-between gap-4"
                   >
                     <div className="flex items-center gap-4">
-                      <div className={`h-12 w-12 rounded-lg flex items-center justify-center transition-colors ${
+                      <div className={`h-12 w-12  flex items-center justify-center transition-colors ${
                         isActive ? 'bg-brand-accent text-white' : 'bg-brand-light text-brand-accent'
                       }`}>
                         <ServiceIcon className="h-6 w-6" />
@@ -136,11 +136,11 @@ export default function ServicesView({ onRequestQuoteWithService }: ServicesView
                       </p>
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs pt-2">
-                        <div className="p-4 bg-white rounded-lg border border-gray-100 space-y-1">
+                        <div className="p-4 bg-white  border border-gray-100 space-y-1">
                           <span className="block text-[10px] font-bold text-gray-400 uppercase font-mono">Company Status</span>
                           <span className="block font-semibold text-brand-dark">CAC Reg. No. 7830522</span>
                         </div>
-                        <div className="p-4 bg-white rounded-lg border border-gray-100 space-y-1">
+                        <div className="p-4 bg-white  border border-gray-100 space-y-1">
                           <span className="block text-[10px] font-bold text-gray-400 uppercase font-mono">Support Availability</span>
                           <span className="block font-semibold text-brand-accent">24-Hour Customer Support</span>
                         </div>
@@ -149,7 +149,7 @@ export default function ServicesView({ onRequestQuoteWithService }: ServicesView
                       <div className="flex justify-end pt-2">
                         <button
                           onClick={() => onRequestQuoteWithService(service.id)}
-                          className="flex items-center gap-1.5 bg-brand-accent hover:bg-brand-accent-hover text-white px-5 py-2.5 rounded-lg text-xs font-bold transition-all"
+                          className="flex items-center gap-1.5 bg-brand-accent hover:bg-brand-accent-hover text-white px-5 py-2.5  text-xs font-bold transition-all"
                         >
                           Select Service & Request Quote
                           <ArrowRight className="h-4 w-4" />
@@ -163,7 +163,7 @@ export default function ServicesView({ onRequestQuoteWithService }: ServicesView
           </div>
 
           {/* Right: Service Detail Sidebar - Desktop only */}
-          <div className="hidden lg:block lg:col-span-5 bg-white rounded-xl p-6 border border-gray-100 sticky top-24 shadow-sm">
+          <div className="hidden lg:block lg:col-span-5 bg-white  p-6 border border-gray-100 sticky top-24 shadow-sm">
             {activeService ? (
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
@@ -172,7 +172,7 @@ export default function ServicesView({ onRequestQuoteWithService }: ServicesView
                 className="space-y-6"
               >
                 <div className="flex items-center gap-3 border-b border-gray-100 pb-4">
-                  <div className="h-14 w-14 rounded-lg bg-brand-accent text-white flex items-center justify-center">
+                  <div className="h-14 w-14  bg-brand-accent text-white flex items-center justify-center">
                     {(() => {
                       const Icon = getIcon(activeService.iconName);
                       return <Icon className="h-7 w-7" />;
@@ -189,11 +189,11 @@ export default function ServicesView({ onRequestQuoteWithService }: ServicesView
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 text-xs pt-2">
-                  <div className="p-4 bg-brand-light rounded-lg border border-gray-100 space-y-1">
+                  <div className="p-4 bg-brand-light  border border-gray-100 space-y-1">
                     <span className="block text-[10px] font-bold text-gray-400 uppercase font-mono">Company Status</span>
                     <span className="block font-semibold text-brand-dark">CAC Reg. No. 7830522</span>
                   </div>
-                  <div className="p-4 bg-brand-light rounded-lg border border-gray-100 space-y-1">
+                  <div className="p-4 bg-brand-light  border border-gray-100 space-y-1">
                     <span className="block text-[10px] font-bold text-gray-400 uppercase font-mono">Support Availability</span>
                     <span className="block font-semibold text-brand-accent">24-Hour Customer Support</span>
                   </div>
@@ -202,7 +202,7 @@ export default function ServicesView({ onRequestQuoteWithService }: ServicesView
                 <div className="pt-2">
                   <button
                     onClick={() => onRequestQuoteWithService(activeService.id)}
-                    className="w-full flex items-center justify-center gap-1.5 bg-brand-accent hover:bg-brand-accent-hover text-white px-5 py-3 rounded-lg text-sm font-bold transition-all"
+                    className="w-full flex items-center justify-center gap-1.5 bg-brand-accent hover:bg-brand-accent-hover text-white px-5 py-3  text-sm font-bold transition-all"
                   >
                     Select Service & Request Quote
                     <ArrowRight className="h-4 w-4" />
@@ -211,7 +211,7 @@ export default function ServicesView({ onRequestQuoteWithService }: ServicesView
               </motion.div>
             ) : (
               <div className="flex flex-col items-center justify-center h-full py-12 text-center space-y-4">
-                <div className="h-16 w-16 rounded-full bg-brand-light flex items-center justify-center">
+                <div className="h-16 w-16  bg-brand-light flex items-center justify-center">
                   <Settings className="h-8 w-8 text-brand-muted" />
                 </div>
                 <div>

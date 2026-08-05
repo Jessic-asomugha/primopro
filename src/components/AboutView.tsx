@@ -12,25 +12,25 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
       name: 'Oil & Gas',
       role: 'Energy Sector',
       desc: 'Providing reliable fuel supply for upstream and downstream operations across the Nigerian energy industry.',
-      avatarUrl: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&h=500&q=80'
+      avatarUrl: '/assets/oil-and-gas.jpg'
     },
     {
       name: 'Construction',
       role: 'Infrastructure Development',
       desc: 'Powering construction sites with dependable diesel and petroleum products for heavy machinery and equipment.',
-      avatarUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=500&h=500&q=80'
+      avatarUrl: '/assets/construction.jpg'
     },
     {
       name: 'Manufacturing',
       role: 'Industrial Production',
       desc: 'Ensuring uninterrupted operations for manufacturing industries with consistent fuel supply and logistics.',
-      avatarUrl: 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=500&h=500&q=80'
+      avatarUrl: '/assets/manufacturing.jpg'
     },
     {
       name: 'Healthcare',
       role: 'Medical Facilities',
       desc: 'Supporting hospitals and healthcare institutions with reliable energy solutions for critical medical services.',
-      avatarUrl: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=500&h=500&q=80'
+      avatarUrl: '/assets/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg'
     }
   ];
 
@@ -60,7 +60,7 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
         {/* Background Oil Rig Image overlay */}
         <div className="absolute inset-0 opacity-20">
           <img 
-            src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1600&q=80" 
+            src="/assets/hero-imge.jpg" 
             alt="Offshore Drilling Rig" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -72,7 +72,7 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-accent px-3 py-1 rounded-full bg-brand-accent/10 border border-brand-accent/20"
+            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-accent px-3 py-1  bg-brand-accent/10 border border-brand-accent/20"
           >
             <Globe2 className="h-3.5 w-3.5" />
             Established 2024 • CAC Reg: 7830522
@@ -107,9 +107,9 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={fadeInVariants}
-              className="p-8 rounded-xl bg-brand-light border border-gray-100 space-y-4 hover:shadow-md transition-shadow duration-300"
+              className="p-8  bg-brand-light border border-gray-100 space-y-4 hover:shadow-md transition-shadow duration-300"
             >
-              <div className="h-12 w-12 rounded-lg bg-brand-accent/10 flex items-center justify-center text-brand-accent">
+              <div className="h-12 w-12  bg-brand-accent/10 flex items-center justify-center text-brand-accent">
                 <Target className="h-6 w-6" />
               </div>
               <h3 className="font-display text-lg font-bold">Our Mission</h3>
@@ -124,9 +124,9 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={fadeInVariants}
-              className="p-8 rounded-xl bg-brand-light border border-gray-100 space-y-4 hover:shadow-md transition-shadow duration-300"
+              className="p-8  bg-brand-light border border-gray-100 space-y-4 hover:shadow-md transition-shadow duration-300"
             >
-              <div className="h-12 w-12 rounded-lg bg-brand-accent/10 flex items-center justify-center text-brand-accent">
+              <div className="h-12 w-12  bg-brand-accent/10 flex items-center justify-center text-brand-accent">
                 <Eye className="h-6 w-6" />
               </div>
               <h3 className="font-display text-lg font-bold">Our Vision</h3>
@@ -141,9 +141,9 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={fadeInVariants}
-              className="p-8 rounded-xl bg-brand-light border border-gray-100 space-y-4 hover:shadow-md transition-shadow duration-300"
+              className="p-8  bg-brand-light border border-gray-100 space-y-4 hover:shadow-md transition-shadow duration-300"
             >
-              <div className="h-12 w-12 rounded-lg bg-brand-accent/10 flex items-center justify-center text-brand-accent">
+              <div className="h-12 w-12  bg-brand-accent/10 flex items-center justify-center text-brand-accent">
                 <Shield className="h-6 w-6" />
               </div>
               <h3 className="font-display text-lg font-bold">Core Values</h3>
@@ -172,7 +172,7 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="p-6 bg-brand-light rounded-xl border border-gray-100 space-y-3 relative hover:border-brand-accent/30 transition-all"
+                className="p-6 bg-brand-light  border border-gray-100 space-y-3 relative hover:border-brand-accent/30 transition-all"
               >
                 <span className="block font-display text-2xl font-black text-brand-accent">{m.year}</span>
                 <h4 className="text-xs font-bold text-brand-dark uppercase tracking-wider">{m.title}</h4>
@@ -207,7 +207,7 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 group flex flex-col justify-between"
+                className="bg-white  overflow-hidden border border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 group flex flex-col justify-between"
               >
                 <div>
                   <div className="h-64 overflow-hidden bg-gray-100 relative">
@@ -232,7 +232,7 @@ export default function AboutView({ onRequestQuote }: AboutViewProps) {
           <div className="text-center mt-12">
             <button
               onClick={onRequestQuote}
-              className="bg-brand-accent hover:bg-brand-accent-hover text-white font-bold py-3.5 px-8 rounded-lg text-xs uppercase tracking-wider transition shadow-sm hover:shadow-md"
+              className="bg-brand-accent hover:bg-brand-accent-hover text-white font-bold py-3.5 px-8  text-xs uppercase tracking-wider transition shadow-sm hover:shadow-md"
             >
               Request a Quote
             </button>

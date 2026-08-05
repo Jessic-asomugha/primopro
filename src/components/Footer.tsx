@@ -30,7 +30,7 @@ export default function Footer({ onNav }: FooterProps) {
           {/* Column 1: Company Profile */}
           <div className="space-y-4">
             <div className="flex items-center gap-2.5 cursor-pointer" onClick={() => handleLinkClick('home')}>
-              <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-brand-accent">
+              <div className="flex items-center justify-center h-10 w-10  bg-brand-accent">
                 <Flame className="h-5 w-5 text-white" />
               </div>
               <div>
@@ -120,10 +120,10 @@ export default function Footer({ onNav }: FooterProps) {
             </div>
             
             <div className="pt-2">
-              <div className="inline-flex items-center gap-2 rounded-md bg-white/5 border border-white/10 px-3 py-1.5 text-xs text-brand-accent font-medium">
+              <div className="inline-flex items-center gap-2  bg-white/5 border border-white/10 px-3 py-1.5 text-xs text-brand-accent font-medium">
                 <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full  bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex  h-2 w-2 bg-emerald-500"></span>
                 </span>
                 24-Hour Customer Support
               </div>
@@ -135,7 +135,7 @@ export default function Footer({ onNav }: FooterProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Primo Energy on Facebook"
-                className="h-9 w-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-accent hover:border-brand-accent/30 transition"
+                className="h-9 w-9  bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-accent hover:border-brand-accent/30 transition"
               >
                 <Facebook className="h-4 w-4" />
               </a>
@@ -144,7 +144,7 @@ export default function Footer({ onNav }: FooterProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Primo Energy on Instagram"
-                className="h-9 w-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-accent hover:border-brand-accent/30 transition"
+                className="h-9 w-9  bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-accent hover:border-brand-accent/30 transition"
               >
                 <Instagram className="h-4 w-4" />
               </a>
@@ -153,7 +153,7 @@ export default function Footer({ onNav }: FooterProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Primo Energy on TikTok"
-                className="h-9 w-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-accent hover:border-brand-accent/30 transition"
+                className="h-9 w-9  bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-accent hover:border-brand-accent/30 transition"
               >
                 <TikTokIcon className="h-4 w-4" />
               </a>
@@ -162,7 +162,7 @@ export default function Footer({ onNav }: FooterProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Primo Energy on LinkedIn"
-                className="h-9 w-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-accent hover:border-brand-accent/30 transition"
+                className="h-9 w-9  bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-accent hover:border-brand-accent/30 transition"
               >
                 <Linkedin className="h-4 w-4" />
               </a>

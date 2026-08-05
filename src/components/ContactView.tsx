@@ -88,7 +88,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
           <button
             onClick={onBackToHome}
-            className="inline-flex items-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase transition"
+            className="inline-flex items-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-white px-5 py-2.5  text-xs font-bold uppercase transition"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to Home
@@ -113,7 +113,7 @@ const handleSubmit = async (e: React.FormEvent) => {
               <div className="space-y-5 pt-4">
                 
                 <div className="flex items-start gap-4">
-                  <div className="h-10 w-10 rounded-lg bg-brand-accent/10 flex items-center justify-center text-brand-accent shrink-0">
+                  <div className="h-10 w-10  bg-brand-accent/10 flex items-center justify-center text-brand-accent shrink-0">
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
@@ -125,7 +125,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="h-10 w-10 rounded-lg bg-brand-accent/10 flex items-center justify-center text-brand-accent shrink-0">
+                  <div className="h-10 w-10  bg-brand-accent/10 flex items-center justify-center text-brand-accent shrink-0">
                     <Phone className="h-5 w-5" />
                   </div>
                   <div>
@@ -139,7 +139,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="h-10 w-10 rounded-lg bg-brand-accent/10 flex items-center justify-center text-brand-accent shrink-0">
+                  <div className="h-10 w-10  bg-brand-accent/10 flex items-center justify-center text-brand-accent shrink-0">
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
@@ -156,7 +156,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             </div>
 
             {/* Right Column: Form */}
-            <div className="lg:col-span-7 bg-brand-light rounded-xl p-8 border border-gray-100 shadow-2xs">
+            <div className="lg:col-span-7 bg-brand-light  p-8 border border-gray-100">
               <AnimatePresence mode="wait">
                 {!submitted ? (
                   <motion.form 
@@ -179,7 +179,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                           value={formData.firstName}
                           onChange={handleChange}
                           placeholder="John"
-                          className="w-full rounded-lg bg-white border border-gray-200 px-3.5 py-2.5 text-xs text-brand-dark focus:outline-hidden focus:border-brand-accent transition"
+                          className="w-full  bg-white border border-gray-200 px-3.5 py-2.5 text-xs text-brand-dark focus:outline-hidden focus:border-brand-accent transition"
                         />
                       </div>
                       <div>
@@ -193,7 +193,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                           value={formData.lastName}
                           onChange={handleChange}
                           placeholder="Doe"
-                          className="w-full rounded-lg bg-white border border-gray-200 px-3.5 py-2.5 text-xs text-brand-dark focus:outline-hidden focus:border-brand-accent transition"
+                          className="w-full  bg-white border border-gray-200 px-3.5 py-2.5 text-xs text-brand-dark focus:outline-hidden focus:border-brand-accent transition"
                         />
                       </div>
                     </div>
@@ -209,7 +209,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="j.doe@logistics.com"
-                        className="w-full rounded-lg bg-white border border-gray-200 px-3.5 py-2.5 text-xs text-brand-dark focus:outline-hidden focus:border-brand-accent transition"
+                        className="w-full  bg-white border border-gray-200 px-3.5 py-2.5 text-xs text-brand-dark focus:outline-hidden focus:border-brand-accent transition"
                       />
                     </div>
 
@@ -223,7 +223,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                         value={formData.subject}
                         onChange={handleChange}
                         placeholder="Fuel supply inquiry..."
-                        className="w-full rounded-lg bg-white border border-gray-200 px-3.5 py-2.5 text-xs text-brand-dark focus:outline-hidden focus:border-brand-accent transition"
+                        className="w-full  bg-white border border-gray-200 px-3.5 py-2.5 text-xs text-brand-dark focus:outline-hidden focus:border-brand-accent transition"
                       />
                     </div>
 
@@ -238,7 +238,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                         value={formData.message}
                         onChange={handleChange}
                         placeholder="Tell us about your energy needs..."
-                        className="w-full rounded-lg bg-white border border-gray-200 px-3.5 py-2.5 text-xs text-brand-dark focus:outline-hidden focus:border-brand-accent transition resize-none"
+                        className="w-full  bg-white border border-gray-200 px-3.5 py-2.5 text-xs text-brand-dark focus:outline-hidden focus:border-brand-accent transition resize-none"
                       />
                     </div>
 
@@ -246,7 +246,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full bg-brand-accent hover:bg-brand-accent-hover disabled:opacity-50 text-white font-bold py-3 px-6 rounded-lg text-xs uppercase tracking-widest transition flex items-center justify-center gap-2"
+                        className="w-full bg-brand-accent hover:bg-brand-accent-hover disabled:opacity-50 text-white font-bold py-3 px-6  text-xs uppercase tracking-widest transition flex items-center justify-center gap-2"
                       >
                         {isSubmitting ? (
                           <>
@@ -280,7 +280,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                     </p>
                     <button
                       onClick={resetForm}
-                      className="bg-brand-dark hover:bg-black text-white px-5 py-2 rounded-lg text-xs font-semibold transition"
+                      className="bg-brand-dark hover:bg-black text-white px-5 py-2  text-xs font-semibold transition"
                     >
                       Send Another Message
                     </button>
@@ -297,7 +297,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       <section className="relative h-96 bg-brand-dark overflow-hidden border-t border-gray-100">
         <div className="absolute inset-0 z-10 bg-brand-dark/20" />
         <img 
-          src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1200&q=80" 
+          src="/assets/multistate-coverage.jpg" 
           alt="Monochromatic topographical grid map" 
           className="w-full h-full object-cover opacity-35 filter grayscale scale-105"
           referrerPolicy="no-referrer"
@@ -305,7 +305,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         
         {/* Floating geographic node markers */}
         <div className="absolute inset-0 z-20 flex items-center justify-center p-4">
-          <div className="bg-brand-dark/95 border border-white/10 rounded-xl p-5 shadow-2xl max-w-xs text-white">
+          <div className="bg-brand-dark/95 border border-white/10  p-5 max-w-xs text-white">
             <span className="block text-[10px] font-mono tracking-widest text-brand-accent uppercase">Head Office Location</span>
             <h4 className="font-display text-sm font-bold mt-1">Abuja, FCT — Nigeria</h4>
             <p className="text-[11px] text-gray-400 mt-2">

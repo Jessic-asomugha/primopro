@@ -47,18 +47,16 @@ export default function HomeView({
     <div className="bg-white text-brand-dark overflow-hidden">
       
       {/* 1. HERO SECTION */}
-      <section className="relative min-h-[88vh] flex items-center bg-brand-light">
-        <div className="absolute inset-0 flex">
-          <div className="w-full lg:w-1/2 bg-brand-light" />
-          <div className="hidden lg:block lg:w-1/2 relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-brand-light via-transparent to-black/30 z-10" />
-            <img 
-              src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1400&q=80" 
-              alt="Primo Offshore Deepwater Oil Rig" 
-              className="absolute inset-0 h-full w-full object-cover"
-              referrerPolicy="no-referrer"
-            />
-          </div>
+      <section className="relative min-h-[88vh] flex items-center bg-brand-dark">
+        {/* Cinematic Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/assets/hero-imge.jpg" 
+            alt="Primo Offshore Deepwater Oil Rig" 
+            className="absolute inset-0 h-full w-full object-cover"
+            referrerPolicy="no-referrer"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70 z-10" />
         </div>
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 z-20 w-full">
@@ -69,8 +67,8 @@ export default function HomeView({
               transition={{ duration: 0.6 }}
               className="space-y-6 max-w-xl"
             >
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-brand-accent/10 rounded-full text-brand-accent text-xs font-semibold uppercase tracking-wider border border-brand-accent/20">
-                <span className="h-2 w-2 rounded-full bg-brand-accent animate-ping" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-brand-accent/10  text-brand-accent text-xs font-semibold uppercase tracking-wider border border-brand-accent/20">
+                <span className="h-2 w-2  bg-brand-accent animate-ping" />
                 Established 2024 • CAC Reg: 7830522
               </div>
               
@@ -86,14 +84,14 @@ export default function HomeView({
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
                 <button
                   onClick={onRequestQuote}
-                  className="bg-brand-accent hover:bg-brand-accent-hover text-white font-bold py-4 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 text-center flex items-center justify-center gap-2 group text-sm"
+                  className="bg-brand-accent hover:bg-brand-accent-hover text-white font-bold py-4 px-8  shadow-md hover:shadow-lg transition-all duration-200 text-center flex items-center justify-center gap-2 group text-sm"
                 >
                   Request a Quote
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </button>
                 <button
                   onClick={onNavigateToAbout}
-                  className="bg-brand-dark hover:bg-black text-white font-semibold py-4 px-8 rounded-lg transition text-center text-sm"
+                  className="bg-brand-dark hover:bg-black text-white font-semibold py-4 px-8  transition text-center text-sm"
                 >
                   Learn More
                 </button>
@@ -151,7 +149,7 @@ export default function HomeView({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: idx * 0.15 }}
-                className="relative group p-6 rounded-xl bg-white/5 border border-white/5 hover:border-brand-accent/30 transition-all duration-300"
+                className="relative group p-6  bg-white/5 border border-white/5 hover:border-brand-accent/30 transition-all duration-300"
               >
                 {/* Watermark number */}
                 <div className="absolute -top-6 right-4 text-7xl font-display font-bold text-white/[0.03] select-none group-hover:text-brand-accent/[0.08] transition-colors duration-300">
@@ -181,16 +179,16 @@ export default function HomeView({
             
             {/* Visual Image container with oil refinery/tanker image */}
             <div className="lg:col-span-5 relative">
-              <div className="absolute -top-4 -left-4 w-24 h-24 bg-brand-accent/10 -z-10 rounded-lg" />
-              <div className="overflow-hidden rounded-xl shadow-lg border border-gray-100">
+              <div className="absolute -top-4 -left-4 w-24 h-24 bg-brand-accent/10 -z-10 " />
+              <div className="overflow-hidden  shadow-lg border border-gray-100">
                 <img 
-                  src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=1000&q=80" 
+                  src="/assets/our-mission-on-the-home-page.jpg" 
                   alt="Primo Coastal Petroleum Refinery Terminal" 
                   className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-brand-accent text-white p-6 rounded-xl shadow-xl hidden sm:block max-w-xs">
+              <div className="absolute -bottom-6 -right-6 bg-brand-accent text-white p-6  shadow-xl hidden sm:block max-w-xs">
                 <span className="block font-mono text-xs uppercase tracking-widest text-white/80">Service Standard</span>
                 <span className="block text-3xl font-display font-bold mt-1">24/7 Support</span>
                 <span className="block text-xs text-white/80 mt-1">Same-day delivery available with professional customer support.</span>
@@ -222,15 +220,15 @@ export default function HomeView({
 
               {/* Bullet checklist */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs font-semibold text-brand-dark">
-                <div className="flex items-center gap-2 bg-brand-light px-3 py-2 rounded-lg">
+                <div className="flex items-center gap-2 bg-brand-light px-3 py-2 ">
                   <CheckCircle2 className="h-4 w-4 text-brand-accent" />
                   Integrity
                 </div>
-                <div className="flex items-center gap-2 bg-brand-light px-3 py-2 rounded-lg">
+                <div className="flex items-center gap-2 bg-brand-light px-3 py-2 ">
                   <CheckCircle2 className="h-4 w-4 text-brand-accent" />
                   Excellence
                 </div>
-                <div className="flex items-center gap-2 bg-brand-light px-3 py-2 rounded-lg">
+                <div className="flex items-center gap-2 bg-brand-light px-3 py-2 ">
                   <CheckCircle2 className="h-4 w-4 text-brand-accent" />
                   Reliability
                 </div>
@@ -239,7 +237,7 @@ export default function HomeView({
               <div className="pt-2">
                 <button
                   onClick={onRequestQuote}
-                  className="bg-brand-accent hover:bg-brand-accent-hover text-white px-6 py-3 text-sm font-semibold rounded-lg transition shadow-sm hover:shadow-md"
+                  className="bg-brand-accent hover:bg-brand-accent-hover text-white px-6 py-3 text-sm font-semibold  transition shadow-sm hover:shadow-md"
                 >
                   Request a Quote — Now
                 </button>
@@ -280,10 +278,10 @@ export default function HomeView({
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="bg-white rounded-xl p-8 border border-gray-100 shadow-xs hover:shadow-md hover:border-brand-accent/20 transition-all duration-300 flex flex-col justify-between"
+                  className="bg-white  p-8 border border-gray-100 shadow-xs hover:shadow-md hover:border-brand-accent/20 transition-all duration-300 flex flex-col justify-between"
                 >
                   <div>
-                    <div className="h-12 w-12 rounded-lg bg-brand-light flex items-center justify-center text-brand-accent mb-6">
+                    <div className="h-12 w-12  bg-brand-light flex items-center justify-center text-brand-accent mb-6">
                       <IconComponent className="h-6 w-6" />
                     </div>
                     <h3 className="font-display text-xl font-bold tracking-tight text-brand-dark mb-3">
@@ -309,7 +307,7 @@ export default function HomeView({
           <div className="text-center mt-12">
             <button
               onClick={onNavigateToServices}
-              className="inline-flex items-center gap-2 bg-brand-dark hover:bg-black text-white px-7 py-3 rounded-lg text-xs font-bold tracking-wider uppercase transition"
+              className="inline-flex items-center gap-2 bg-brand-dark hover:bg-black text-white px-7 py-3  text-xs font-bold tracking-wider uppercase transition"
             >
               View All Services
               <ChevronRight className="h-4 w-4" />
@@ -336,7 +334,7 @@ export default function HomeView({
               </p>
 
               <div className="space-y-3 pt-2">
-                <div className="flex items-start gap-3 bg-brand-light p-4 rounded-lg border border-gray-100 shadow-2xs">
+                <div className="flex items-start gap-3 bg-brand-light p-4  border border-gray-100 shadow-2xs">
                   <ShieldCheck className="h-5 w-5 text-brand-accent shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-xs font-bold text-brand-dark">Licensed Nigerian Company</h4>
@@ -344,7 +342,7 @@ export default function HomeView({
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3 bg-brand-light p-4 rounded-lg border border-gray-100 shadow-2xs">
+                <div className="flex items-start gap-3 bg-brand-light p-4  border border-gray-100 shadow-2xs">
                   <Award className="h-5 w-5 text-brand-accent shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-xs font-bold text-brand-dark">Fast & Reliable Delivery</h4>
@@ -352,7 +350,7 @@ export default function HomeView({
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3 bg-brand-light p-4 rounded-lg border border-gray-100 shadow-2xs">
+                <div className="flex items-start gap-3 bg-brand-light p-4  border border-gray-100 shadow-2xs">
                   <Building2 className="h-5 w-5 text-brand-accent shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-xs font-bold text-brand-dark">Competitive Pricing</h4>
@@ -369,16 +367,17 @@ export default function HomeView({
               transition={{ duration: 0.5 }}
               className="relative"
             >
-              <div className="overflow-hidden rounded-xl shadow-lg border border-gray-200">
+              <div className="overflow-hidden  shadow-lg border border-gray-200">
                 <img 
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80" 
+                  src="/assets/why-choose-us.jpg" 
                   alt="Industrial oil and gas engineers inspecting high-pressure pipeline" 
                   className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <div className="absolute top-4 right-4 bg-brand-dark text-white px-4 py-2 rounded-lg text-xs font-mono border border-white/10 shadow-md">
+              <div className="absolute top-4 right-4 bg-brand-dark text-white px-4 py-2  backdrop-blur-xs text-[10px] font-mono tracking-wider border border-white/10 shadow-lg">
                 <span>ESTABLISHED: 14 AUGUST 2024</span>
+                <span className="block text-brand-accent font-bold mt-0.5">24/7 SUPPORT // SAME-DAY DELIVERY</span>
               </div>
             </motion.div>
           </motion.div>
@@ -409,7 +408,7 @@ export default function HomeView({
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: idx * 0.1 }}
-                className="group overflow-hidden rounded-xl border border-gray-100 shadow-xs hover:shadow-md transition"
+                className="group overflow-hidden  border border-gray-100 shadow-xs hover:shadow-md transition"
               >
                 <div className="relative h-48 overflow-hidden bg-gray-100">
                   <img 
@@ -418,7 +417,7 @@ export default function HomeView({
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     referrerPolicy="no-referrer"
                   />
-                  <span className="absolute top-4 right-4 bg-brand-dark text-white font-mono text-xs font-bold px-2.5 py-1 rounded-md z-10 border border-white/10">
+                  <span className="absolute top-4 right-4 bg-brand-dark text-white font-mono text-xs font-bold px-2.5 py-1  z-10 border border-white/10">
                     {item.year}
                   </span>
                 </div>
@@ -463,7 +462,7 @@ export default function HomeView({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="rounded-xl p-8 transition-all duration-300 border relative bg-white/5 border-white/5 hover:border-white/15"
+                className=" p-8 transition-all duration-300 border relative bg-white/5 border-white/5 hover:border-white/15"
               >
                 <Quote className="absolute top-6 right-6 h-8 w-8 text-brand-accent/20" />
                 
@@ -471,7 +470,7 @@ export default function HomeView({
                   <img 
                     src={t.avatarUrl} 
                     alt={t.name} 
-                    className="h-12 w-12 rounded-full object-cover border border-white/20 shadow-sm"
+                    className="h-12 w-12  object-cover border border-white/20 shadow-sm"
                     referrerPolicy="no-referrer"
                   />
                   <div>
@@ -547,7 +546,7 @@ export default function HomeView({
               <div className="pt-2">
                 <button
                   onClick={onRequestQuote}
-                  className="bg-brand-accent hover:bg-brand-accent-hover text-white px-6 py-3.5 text-xs font-bold tracking-wider uppercase rounded-lg transition shadow-xs hover:shadow-md"
+                  className="bg-brand-accent hover:bg-brand-accent-hover text-white px-6 py-3.5 text-xs font-bold tracking-wider uppercase  transition shadow-xs hover:shadow-md"
                 >
                   Request a Quote
                 </button>
@@ -556,10 +555,10 @@ export default function HomeView({
 
             {/* Refinery view matching oil & gas theme */}
             <div className="relative">
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-brand-accent/15 -z-10 rounded-lg" />
-              <div className="overflow-hidden rounded-xl shadow-lg border border-gray-100">
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-brand-accent/15 -z-10 " />
+              <div className="overflow-hidden  shadow-lg border border-gray-100">
                 <img 
-                  src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1000&q=80" 
+                  src="/assets/trusted-industry-partner.jpg" 
                   alt="Oil refinery illuminated at twilight" 
                   className="w-full h-[420px] object-cover"
                   referrerPolicy="no-referrer"
@@ -567,7 +566,7 @@ export default function HomeView({
               </div>
               
               {/* Floating technical label */}
-              <div className="absolute top-4 left-4 bg-brand-dark/95 text-white py-3 px-4 rounded-lg backdrop-blur-xs text-[10px] font-mono tracking-wider border border-white/10 shadow-lg">
+              <div className="absolute top-4 left-4 bg-brand-dark/95 text-white py-3 px-4  backdrop-blur-xs text-[10px] font-mono tracking-wider border border-white/10 shadow-lg">
                 <span>SERVICE STATUS: ACTIVE</span>
                 <span className="block text-brand-accent font-bold mt-0.5">24/7 SUPPORT // SAME-DAY DELIVERY</span>
               </div>

@@ -33,7 +33,7 @@ export default function Header({ activePage, setActivePage, onRequestQuote }: He
             onClick={() => handleNavClick('home')} 
             className="flex items-center gap-2.5 cursor-pointer group"
           >
-            <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-brand-dark group-hover:bg-brand-accent transition-colors duration-300">
+            <div className="flex items-center justify-center h-10 w-10  bg-brand-dark group-hover:bg-brand-accent transition-colors duration-300">
               <Flame className="h-5 w-5 text-white animate-pulse" />
             </div>
             <div>
@@ -77,7 +77,7 @@ export default function Header({ activePage, setActivePage, onRequestQuote }: He
             </a>
             <button
               onClick={onRequestQuote}
-              className="bg-brand-accent hover:bg-brand-accent-hover text-white px-5 py-2.5 text-sm font-semibold rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
+              className="bg-brand-accent hover:bg-brand-accent-hover text-white px-5 py-2.5 text-sm font-semibold  shadow-sm hover:shadow-md transition-all duration-200"
             >
               Request a Quote
             </button>
@@ -87,7 +87,7 @@ export default function Header({ activePage, setActivePage, onRequestQuote }: He
           <div className="flex md:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="rounded-lg p-2 text-brand-dark hover:bg-gray-100 transition"
+              className=" p-2 text-brand-dark hover:bg-gray-100 transition"
               aria-label="Toggle Menu"
             >
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -104,7 +104,7 @@ export default function Header({ activePage, setActivePage, onRequestQuote }: He
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`block w-full text-left rounded-lg px-4 py-3 text-base font-semibold transition-colors ${
+                className={`block w-full text-left  px-4 py-3 text-base font-semibold transition-colors ${
                   activePage === item.id 
                     ? 'bg-brand-light text-brand-accent border-l-4 border-brand-accent' 
                     : 'text-brand-dark/70 hover:bg-gray-50 hover:text-brand-accent'
@@ -126,7 +126,7 @@ export default function Header({ activePage, setActivePage, onRequestQuote }: He
                   setMobileMenuOpen(false);
                   onRequestQuote();
                 }}
-                className="w-full bg-brand-accent hover:bg-brand-accent-hover text-white text-center font-bold py-3 px-4 rounded-lg transition"
+                className="w-full bg-brand-accent hover:bg-brand-accent-hover text-white text-center font-bold py-3 px-4  transition"
               >
                 Request a Quote — Now
               </button>
